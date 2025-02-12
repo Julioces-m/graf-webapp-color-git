@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Color RGB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-4 shadow-lg">
+            <h2 class="text-center text-light">Selector de Color RGB 🎨</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="colorPicker" class="text-light">Selecciona un color:</label>
+                    <input type="color" id="colorPicker" class="form-control form-control-color mb-3">
+
+                    <label for="red" class="text-light">Rojo (<span id="redValue">128</span>)</label>
+                    <input type="range" id="red" min="0" max="255" value="128" class="form-range slider">
+
+                    <label for="green" class="text-light">Verde (<span id="greenValue">128</span>)</label>
+                    <input type="range" id="green" min="0" max="255" value="128" class="form-range slider">
+
+                    <label for="blue" class="text-light">Azul (<span id="blueValue">128</span>)</label>
+                    <input type="range" id="blue" min="0" max="255" value="128" class="form-range slider">
+                </div>
+                <div class="col-md-6 d-flex flex-column align-items-center">    
+                    <div id="colorBox"></div>
+                    <p id="colorCode" class="mt-3 text-light fw-bold"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
